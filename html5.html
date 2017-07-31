@@ -6,6 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <style>
+        .div {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            /*transition: width 2s, height 2s;
+            transition-delay: 1s;*/
+            background-color: red;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @media (max-width:468px) and (orientation:portrait) {
+            .div {
+                background-color: yellow;
+                width: 500px;
+                height: 300px;
+            }
+        }
+
+        @media (max-width:468px) and (orientation:landscape) {
+            .div {
+                background-color: #696969;
+                width: 500px;
+                height: 300px;
+            }
+        }
+
+        @media (max-width:468px){
+
+        }
+        /*@media (min-width:470px) and (max-width:728px) {
+            .div {
+                background-color: blue;
+                width: 500px;
+                height: 300px;
+            }
+        }*/
+
+        @media (min-width:900px) {
+            .div {
+
+
+                background-color: green;
+                width: 300px;
+                height: 200px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -16,17 +67,19 @@
         </nav>
     </header>
 
+    <div class="div">Normal div</div>
+    <div class="div translate">Translated div</div>
 
-    <main>
+    <!--<main>
 
         <video width="500" height="300" controls loop>
             <source src="sample.mp4" />
-            <!--<source src="sample.ogg"/>-->
+            
             Your browser doesn't sppport this video
         </video>
 
         <audio controls loop>
-            <source src="audio.mp3"/>
+            <source src="audio.mp3" />
         </audio>
 
         <form>
@@ -80,7 +133,7 @@
             fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue
             velit cursus nunc
         </article>
-    </main>
+    </main>-->
 
     <footer>
         &copy;2017 mywebsite.com
