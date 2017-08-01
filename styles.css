@@ -1,5 +1,41 @@
-h1{
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header,footer{
+    background-color:#333666;
+    width:100%;
+    min-height: 50px;
+    font-size: 15px;
+    color:#fff;
+}
+
+footer{
+ text-align: center;
+}
+
+#site-name{
+   font-weight: bolder;
+   font-size: 23px; 
+   margin-right: 20px;
+}
+
+nav a{
+    margin:5px;
+    text-decoration: none;
+    color:white;
+}
+
+nav a:hover{
+    background-color:red;
+    padding:5px;
+}
+
+p::first-letter{
+    color:red;
     font-weight: bolder;
-    font-size:20px;
-    text-decoration: underline !important;
+    font-size: 25px;
+}
+p{
+      text-indent: 20px;
 }
