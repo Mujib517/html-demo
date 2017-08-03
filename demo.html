@@ -4,10 +4,103 @@
 <head>
     <title>Demo</title>
     <link href="styles.css" rel="stylesheet" />
+    <style>
+        .division {
+            border: 1px solid gray;
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            /*animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-timing-function: ease-out;
+            animation-direction: alternate-reverse;*/
+            /*transform:rotate3d(30deg,30deg,30deg);*/
+            /*box-shadow: 5px 5px;*/
+        }
+
+        @keyframes example {
+            /*0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: blue;
+            }
+
+            50% {
+                background-color: yellow;
+            }
+            75% {
+                background-color: blueviolet;
+            }
+            100% {
+                background-color: green;
+            }*/
+            from {
+                background-color: red;
+            }
+            to {
+                background-color: green;
+                transform: rotateY(180deg);
+                /*transform: rotateZ(180deg);*/
+                /*transform:translate(100px,100px);*/
+                /*width:150px;
+                height: 100px;*/
+            }
+        }
+
+        #div:hover {
+
+            /*width: 200px;
+            height: 100px;
+            transition: width 2s, height 2s;
+            transition-timing-function: ease-in;*/
+            /*transition-delay: 1s;*/
+            /*transform:translate3d(100px,100px,100px); */
+            /*IE 9*/
+            /*-ms-transform: rotateZ(180deg);
+            -webkit-transform: rotateZ(180deg);
+            -o-transform: rotateZ(180deg);
+
+            transform: rotateZ(180deg);
+            transform: rotateX(180deg);
+            transform: rotateY(180deg);*/
+            /*transform: skew(20deg,20deg);*/
+            /*transform: skewX(20deg);
+            transform: skewY(20deg);*/
+            /*transform: rotate(30deg);
+            transform: scale(1.5,1.5);*/
+            /*transform:translate(100px,100px);*/
+        }
+
+        p {
+            /*Ctrl + / */
+            /*text-shadow: 5px 5px;*/
+            word-wrap: normal;
+            word-spacing: 15px;
+            word-break: keep-all;
+        }
+
+        @media (min-width: 420px) {
+            #div {
+                background-color: black;
+                display: none;
+            }
+        }
+
+        @media (min-width:768px) {
+            #div {
+                background-color: yellow;
+                display:block;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <header> 
+    <header>
         <nav>
             <span id="site-name">My Demo Website</span>
             <a href="home.html">Home</a>
@@ -17,6 +110,13 @@
     </header>
 
     <main>
+        <br/>
+        <div id="div" class="division">
+            My Div
+        </div>
+
+        <p id="text">my text ...</p>
+
         <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
             text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
