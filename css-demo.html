@@ -77,76 +77,145 @@
             top: 200px;
             left: 280px;
         }
-
         /*unvisited link*/
+
         a:link {
-            color:#333666;
+            color: #333666;
             font-weight: bold;
         }
 
-        a:visited{
-            color:red;
+        a:visited {
+            color: red;
             font-weight: bolder;
         }
 
-        a:hover{
-            color:yellow;
+        a:hover {
+            color: yellow;
         }
 
-        a:active{
-            color:lightblue;
+        a:active {
+            color: lightblue;
         }
 
-        tbody::first-line{
-            color:red;
+        tbody::first-line {
+            color: red;
         }
 
-        p::first-letter{
+        p::first-letter {
             font-size: 50px;
-            color:red;
+            color: red;
             font-weight: bolder;
         }
 
-        h1::before{
+        h1::before {
             background-image: url('image.jpg');
         }
 
-        h1::after{
+        h1::after {
             background-image: url('image.jpg');
         }
-
     </style>
+
+    <script>
+        //event handler
+        function onBtnClick() {
+
+            var spans = document.getElementsByTagName("span");
+            //second elment
+            alert(spans[1].innerText);
+
+            // var div = document.getElementById('div');
+            // var child = document.getElementById('child');
+
+            // div.removeChild(child);
+
+            // var span = document.createElement('div');
+            // span.innerText = "Hello JS";
+
+            // div.appendChild(span);
+
+
+
+            // var obj = document.getElementById('txt');
+            // var pwd = document.getElementById('pwd');
+
+            //alert(pwd.getAttribute("type"));
+
+            // obj.style.backgroundColor = "red";
+            //obj.style.border = "2px solid green";
+
+            // alert(obj.value + '  ' + pwd.value);
+        }
+
+        // function onMouseOver() {
+        //     alert('mouse over');
+        // }
+
+        // function keyPressed() {
+        //     alert('key pressed');
+        // }
+
+        // function onLostFocus(event) {
+        //     alert(event.target.value);
+        // }
+    </script>
 </head>
 
 <body>
 
-<table>
-    <thead>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Branch</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Mujib</td>
-            <td>CSE</td>
-        </tr>
-         <tr>
-            <td>2</td>
-            <td>John</td>
-            <td>ECE</td>
-        </tr>
-         <tr>
-            <td>3</td>
-            <td>Joshua</td>
-            <td>CSE</td>
-        </tr>
-    </tbody>
-</table>
+
+    <div id="div">
+        Parent Div
+        <div id="child">
+            Child Div
+        </div>
+    </div>
+
+
+    <span>Span1</span>
+    <span>Span2</span>
+    <span>Span3</span>
+    <span>Span4</span>
 
 
 
+    <div>
+        <input id="txt" type="text" placeholder="name" />
+    </div>
+
+
+    <div>
+        <input id="pwd" type="password" placeholder="password" />
+    </div>
+
+    <div>
+        <input type="button" value="Button" onclick="onBtnClick()" />
+    </div>
+
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Branch</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mujib</td>
+                <td>CSE</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>John</td>
+                <td>ECE</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Joshua</td>
+                <td>CSE</td>
+            </tr>
+        </tbody>
+    </table>
     <div style="width:50%">
 
         <div id="mydiv">
