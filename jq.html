@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Demo</title>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>-->
+
+    <script src="lib/jquery-3.2.1.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('#btnHide').click(function () {
+                $('#header').hide(1000);
+            });
+
+            $('#btnShow').click(function () {
+                $('#header').show(1000);
+            });
+
+            $('#btnShow').dblclick(function () {
+                alert('double clicked');//message box
+            });
+
+            $('#btnShow').mouseenter(function () {
+                console.log("mouse entered");
+            });
+
+
+            $('#btnToggle').click(function () {
+                $('#header').toggle(1000);
+            });
+
+            $('#btnFadeIn').click(function () {
+                $('.cls').fadeIn(1000);
+            });
+
+            $('#btnFadeOut').click(function () {
+                $('.cls').fadeOut(1000);
+            });
+
+            $('#btnFadeToggle').click(function () {
+                $('.cls').fadeToggle(1000);
+            });
+
+            $('#btnSlideUp').click(function () {
+                $('.cls').slideUp(1000);
+            });
+
+            $('#btnSlideDown').click(function () {
+                $('.cls').slideDown(1000);
+            });
+
+            $('#btnSlideToggle').click(function () {
+                $('.cls').slideToggle(1000);
+            });
+
+            $('#btnAnimate').click(function () {
+                $('.cls').animate({ opacity: '0.1',fontSize:'50px' }, 'fast', function () {
+                    console.log('done');
+                });
+            });
+
+        });
+
+
+
+
+        // function hide() {
+        //     $('div:first-child').hide(1000);
+        //     $('div:last-child').hide(1000);
+        //     // $('[id=header]').hide(1000); //jquery
+
+        //     //javascript
+        //     // var h1 = document.getElementsByTagName('h1');
+        //     // h1[0].style.display = 'none';
+        // }
+
+        // function show() {
+        //     $('.cls').show(1000);
+        // }
+    </script>
+
+</head>
+
+<body>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+
+    <div id="parent">
+        Parent Div
+
+        <div>Child div 1</div>
+        <div>Child div 2</div>
+        <div>Child div 3</div>
+    </div>
+
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Branch</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Staackman</td>
+                <td>CSE</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>John</td>
+                <td>ECE</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Joseph</td>
+                <td>EEE</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <button id="btnToggle">Toggle</button>
+    <button id="btnHide">Hide</button>
+    <button id="btnShow">Show</button>
+    <button id="btnFadeIn">FadeIn</button>
+    <button id="btnFadeOut">FadeOut</button>
+    <button id="btnFadeToggle">FadeToggle</button>
+
+
+    <button id="btnSlideToggle">SlideToggle</button>
+    <button id="btnSlideUp">Slideup</button>
+    <button id="btnSlideDown">SlideDown</button>
+
+    <button id="btnAnimate">Animate</button>
+
+
+    <h1 class="cls">JQuery Demo</h1>
+    <h1 class="cls">JQuery Demo</h1>
+    <h1 class="cls">JQuery Demo</h1>
+    <h1 id="header" class="cls">JQuery Demo</h1>
+
+</body>
+
+</html>
